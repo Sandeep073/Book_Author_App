@@ -1,3 +1,4 @@
+/*
 package com.example.bookApplication1.Entity;
 
 import jakarta.persistence.Column;
@@ -13,9 +14,10 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@DiscriminatorValue("Fiction")
-public final class FictionBook extends Book {
+@DiscriminatorValue("Fiction")  // Ensure this matches the value in your database
+public class FictionBook extends Book {  // Removed `final` keyword
 
     @Column(name = "fiction_type")
     private String fictionType;
 }
+*/
